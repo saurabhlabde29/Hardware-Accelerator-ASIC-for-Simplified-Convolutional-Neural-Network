@@ -1,0 +1,396 @@
+# //  ModelSim SE 10.3b May 29 2014 Linux 3.10.0-514.16.1.el7.x86_64
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -novopt tb_top 
+# Start time: 17:08:50 on Nov 18,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading sv_std.std
+# Loading work.operation
+# Loading work.ece564_project_tb_top_v_unit
+# Loading work.tb_top
+# Loading work.dut_ifc
+# Loading work.dut_wrapper
+# Loading work.MyDesign
+# Loading work.macopertion
+# Loading work.DW02_mac
+# Loading work.macopertion_m
+# Loading work.sram
+# Loading work.test
+add wave -position insertpoint  \
+sim:/tb_top/dut_wrapper/dut/dut__xxx__finish \
+sim:/tb_top/dut_wrapper/dut/xxx__dut__go \
+sim:/tb_top/dut_wrapper/dut/dut__bvm__address \
+sim:/tb_top/dut_wrapper/dut/dut__bvm__enable \
+sim:/tb_top/dut_wrapper/dut/dut__bvm__write \
+sim:/tb_top/dut_wrapper/dut/dut__bvm__data \
+sim:/tb_top/dut_wrapper/dut/bvm__dut__data \
+sim:/tb_top/dut_wrapper/dut/dut__dim__address \
+sim:/tb_top/dut_wrapper/dut/dut__dim__enable \
+sim:/tb_top/dut_wrapper/dut/dut__dim__write \
+sim:/tb_top/dut_wrapper/dut/dut__dim__data \
+sim:/tb_top/dut_wrapper/dut/dim__dut__data \
+sim:/tb_top/dut_wrapper/dut/dut__dom__address \
+sim:/tb_top/dut_wrapper/dut/dut__dom__data \
+sim:/tb_top/dut_wrapper/dut/dut__dom__enable \
+sim:/tb_top/dut_wrapper/dut/dut__dom__write \
+sim:/tb_top/dut_wrapper/dut/clk \
+sim:/tb_top/dut_wrapper/dut/reset \
+sim:/tb_top/dut_wrapper/dut/bvector0 \
+sim:/tb_top/dut_wrapper/dut/bvector1 \
+sim:/tb_top/dut_wrapper/dut/bvector2 \
+sim:/tb_top/dut_wrapper/dut/bvector3 \
+sim:/tb_top/dut_wrapper/dut/avector00 \
+sim:/tb_top/dut_wrapper/dut/avector01 \
+sim:/tb_top/dut_wrapper/dut/avector02 \
+sim:/tb_top/dut_wrapper/dut/avector03 \
+sim:/tb_top/dut_wrapper/dut/avector10 \
+sim:/tb_top/dut_wrapper/dut/avector11 \
+sim:/tb_top/dut_wrapper/dut/avector12 \
+sim:/tb_top/dut_wrapper/dut/avector13 \
+sim:/tb_top/dut_wrapper/dut/avector20 \
+sim:/tb_top/dut_wrapper/dut/avector21 \
+sim:/tb_top/dut_wrapper/dut/avector22 \
+sim:/tb_top/dut_wrapper/dut/avector23 \
+sim:/tb_top/dut_wrapper/dut/avector30 \
+sim:/tb_top/dut_wrapper/dut/avector31 \
+sim:/tb_top/dut_wrapper/dut/avector32 \
+sim:/tb_top/dut_wrapper/dut/avector33 \
+sim:/tb_top/dut_wrapper/dut/counter \
+sim:/tb_top/dut_wrapper/dut/bitselect \
+sim:/tb_top/dut_wrapper/dut/select \
+sim:/tb_top/dut_wrapper/dut/bitselect1 \
+sim:/tb_top/dut_wrapper/dut/startdesign \
+sim:/tb_top/dut_wrapper/dut/flag_b \
+sim:/tb_top/dut_wrapper/dut/flag_a \
+sim:/tb_top/dut_wrapper/dut/mac_a0 \
+sim:/tb_top/dut_wrapper/dut/mac_a1 \
+sim:/tb_top/dut_wrapper/dut/mac_a2 \
+sim:/tb_top/dut_wrapper/dut/mac_a3 \
+sim:/tb_top/dut_wrapper/dut/mac_b \
+sim:/tb_top/dut_wrapper/dut/mac_out0 \
+sim:/tb_top/dut_wrapper/dut/mac_out1 \
+sim:/tb_top/dut_wrapper/dut/mac_out2 \
+sim:/tb_top/dut_wrapper/dut/mac_out3 \
+sim:/tb_top/dut_wrapper/dut/zcount \
+sim:/tb_top/dut_wrapper/dut/z \
+sim:/tb_top/dut_wrapper/dut/bitselect2 \
+sim:/tb_top/dut_wrapper/dut/z_start \
+sim:/tb_top/dut_wrapper/dut/flag_z \
+sim:/tb_top/dut_wrapper/dut/count_m \
+sim:/tb_top/dut_wrapper/dut/m \
+sim:/tb_top/dut_wrapper/dut/flag_zsynch \
+sim:/tb_top/dut_wrapper/dut/mac_z \
+sim:/tb_top/dut_wrapper/dut/sendz_count \
+sim:/tb_top/dut_wrapper/dut/final_output \
+sim:/tb_top/dut_wrapper/dut/output_store \
+sim:/tb_top/dut_wrapper/dut/count_out \
+sim:/tb_top/dut_wrapper/dut/flag_out \
+sim:/tb_top/dut_wrapper/dut/count_store
+run 30000
+# @                   0: INFO: Initialize memories
+# 12 4
+# @                   0: INFO: Initialize Memories
+# @                 295: INFO: Memory Checker running
+# @295 :INFO: Input Array 
+# IA = [
+#  12579   -3150   15584   18357   17791   -2942   11576  -10913  -17007    5883  -16281    4586  ;
+#  17282   -2288   13897  -15256   14622   -8114    4530     354   10408   -2975   -9824   -4870  ;
+# -15713   -1399    5228   -7920   16784  -13830  -19651    7785  -11515  -14584    9978  -18716  ;
+#   7204   10017    2416    6906   11613    5368  -14010    1150  -14404  -11842    -988   -3131  ;
+#  -1294  -16093   14075     674   17598  -10939   12993  -10468    2774   14857  -10516    8477  ;
+#   1046  -16696    7316   -8374   17078    2488   -6603   -3255   16833   -5312  -17074  -14117  ;
+#  -7497   10285   15998   17310   -6240  -10261   11635   -8166   -1298   -9664   19437  -10346  ;
+#   1803   -7383    3043   11441   -8204  -15498    3125    6197    6087  -14690   10023     350  ;
+#   4652   15106    9792    6845  -14539     526   -2263  -11101  -19570   -9435   14624  -13441  ;
+# -12763  -17856   -2607  -17508  -12639    9767   -9820   18726  -18579   11375   -3556    2414  ;
+#  -6442    8947  -13008    6905   -4020   -2138   15799  -15314    5561   10729    5826   -4808  ;
+# -18724   18980   14963    4153  -13879   17325    -539  -17869  -11901    8844  -17182   18942  ;
+# ]
+# @295 :INFO: ROI : {0,0} 
+# ROI[1] = [
+#  12579   -3150   15584   18357   17791   -2942  ;
+#  17282   -2288   13897  -15256   14622   -8114  ;
+# -15713   -1399    5228   -7920   16784  -13830  ;
+#   7204   10017    2416    6906   11613    5368  ;
+#  -1294  -16093   14075     674   17598  -10939  ;
+#   1046  -16696    7316   -8374   17078    2488  ;
+# ]
+# 
+# @295 :INFO: ROI : {0,1} 
+# ROI[2] = [
+#  11576  -10913  -17007    5883  -16281    4586  ;
+#   4530     354   10408   -2975   -9824   -4870  ;
+# -19651    7785  -11515  -14584    9978  -18716  ;
+# -14010    1150  -14404  -11842    -988   -3131  ;
+#  12993  -10468    2774   14857  -10516    8477  ;
+#  -6603   -3255   16833   -5312  -17074  -14117  ;
+# ]
+# 
+# @295 :INFO: ROI : {1,0} 
+# ROI[3] = [
+#  -7497   10285   15998   17310   -6240  -10261  ;
+#   1803   -7383    3043   11441   -8204  -15498  ;
+#   4652   15106    9792    6845  -14539     526  ;
+# -12763  -17856   -2607  -17508  -12639    9767  ;
+#  -6442    8947  -13008    6905   -4020   -2138  ;
+# -18724   18980   14963    4153  -13879   17325  ;
+# ]
+# 
+# @295 :INFO: ROI : {1,1} 
+# ROI[4] = [
+#  11635   -8166   -1298   -9664   19437  -10346  ;
+#   3125    6197    6087  -14690   10023     350  ;
+#  -2263  -11101  -19570   -9435   14624  -13441  ;
+#  -9820   18726  -18579   11375   -3556    2414  ;
+#  15799  -15314    5561   10729    5826   -4808  ;
+#   -539  -17869  -11901    8844  -17182   18942  ;
+# ]
+# 
+# @295 :INFO: B-vectors 
+# B = [
+# -13435   18765   -5643  -17177   -6822  -10447    9571   14312   -1344  ;
+#  16548   13336   10838   18696   -3168  -17654   12477  -12215    9841  ;
+#  17993   16168   16844   11142    8397   -9046   -1313  -16437    -664  ;
+#  -3392    5206   13799  -15760  -19918   -2012   19412    -681    6108  ;
+# ]
+# 
+# @295 :INFO: Layer Quadrant Arrays 
+# @295 :INFO: Layer 0, Quadrant {0,0}
+# Q(0,:,:) = [
+#      0    8146  
+#      0    3638  
+# ]
+# 
+# @295 :INFO: Layer 0, Quadrant {0,1}
+# Q(0,:,:) = [
+#      0       0  
+#      0       0  
+# ]
+# 
+# @295 :INFO: Layer 0, Quadrant {1,0}
+# Q(0,:,:) = [
+#   6692       0  
+#   1662       0  
+# ]
+# 
+# @295 :INFO: Layer 0, Quadrant {1,1}
+# Q(0,:,:) = [
+#      0   13279  
+#   1804       0  
+# ]
+# 
+# @295 :INFO: Layer 1, Quadrant {0,0}
+# Q(1,:,:) = [
+#   4463       0  
+#   5283    2879  
+# ]
+# 
+# @295 :INFO: Layer 1, Quadrant {0,1}
+# Q(1,:,:) = [
+#      0       0  
+#      0       0  
+# ]
+# 
+# @295 :INFO: Layer 1, Quadrant {1,0}
+# Q(1,:,:) = [
+#   2437   13331  
+#      0    3341  
+# ]
+# 
+# @295 :INFO: Layer 1, Quadrant {1,1}
+# Q(1,:,:) = [
+#      0       0  
+#   3448   14352  
+# ]
+# 
+# @295 :INFO: Layer 2, Quadrant {0,0}
+# Q(2,:,:) = [
+#   8021    5161  
+#   4937    5879  
+# ]
+# 
+# @295 :INFO: Layer 2, Quadrant {0,1}
+# Q(2,:,:) = [
+#      0       0  
+#      0     240  
+# ]
+# 
+# @295 :INFO: Layer 2, Quadrant {1,0}
+# Q(2,:,:) = [
+#      0    7112  
+#      0       0  
+# ]
+# 
+# @295 :INFO: Layer 2, Quadrant {1,1}
+# Q(2,:,:) = [
+#   4359       0  
+#   1717   10040  
+# ]
+# 
+# @295 :INFO: Layer 3, Quadrant {0,0}
+# Q(3,:,:) = [
+#      0       0  
+#   6866       0  
+# ]
+# 
+# @295 :INFO: Layer 3, Quadrant {0,1}
+# Q(3,:,:) = [
+#      0       0  
+#      0       0  
+# ]
+# 
+# @295 :INFO: Layer 3, Quadrant {1,0}
+# Q(3,:,:) = [
+#   8423       0  
+#      0    4574  
+# ]
+# 
+# @295 :INFO: Layer 3, Quadrant {1,1}
+# Q(3,:,:) = [
+#      0       0  
+#      0       0  
+# ]
+# 
+# @295 :INFO: M-vectors 
+# M = [
+#   6552    -800   -3633    6451  -14670    2147   14429   16916   -7814    9927   -7934    8302   12070   15606   -5184  -19316    7053  -11087   -2160  -19321  -17148  -17229   -5819   17906    7947   10611     778   16963   -9775    8800  -11410   -9511   16682   12481    3719    -377   -3268     500  -13696   -5190   -2846   -4759   12944   15168   13738   13869    4613  -10473   -9678    7692  -14696   19406   16754   13321   12251    1078    6424    4556   -6934  -13128   13072    1582   14382  -12906  
+#  12481    3719    -377   -3268     500  -13696   -5190   -2846   -4759   12944   15168   13738   13869    4613  -10473   -9678    7692  -14696   19406   16754   13321   12251    1078    6424    4556   -6934  -13128   13072    1582   14382  -12906   -1719   13430    4099   17376   15135      82   -3912   12554   17096   -2388   -7901    1226     192   -1372   19951    9621   -8650   -3577   10042    5175  -10450   -8363   19708   11848  -15060   -5477    6772  -17179    5035   -9371   10397   14399    4601  
+#   4099   17376   15135      82   -3912   12554   17096   -2388   -7901    1226     192   -1372   19951    9621   -8650   -3577   10042    5175  -10450   -8363   19708   11848  -15060   -5477    6772  -17179    5035   -9371   10397   14399    4601    4653    3141   16705  -11752   -1081    4460   18390  -18435  -14048  -14382    -956   -7805   14318   18415  -14857  -16649    5785    9625   17440   -2441   -8158      60  -17944    7089    3595   -6087   17463    5771    4848    6052  -14606   11214  -18554  
+#  16705  -11752   -1081    4460   18390  -18435  -14048  -14382    -956   -7805   14318   18415  -14857  -16649    5785    9625   17440   -2441   -8158      60  -17944    7089    3595   -6087   17463    5771    4848    6052  -14606   11214  -18554   -9802   16875     -74   18206   17451    2992   15689    6901   -6276   -4785    8315    2677   -6945  -18381  -10808  -15845   17088   15546   12952  -10774   -4272   -8985   -1767  -12301   -8910     720   12795  -16903   -5940  -10449   13352   16556   -3178  
+#    -74   18206   17451    2992   15689    6901   -6276   -4785    8315    2677   -6945  -18381  -10808  -15845   17088   15546   12952  -10774   -4272   -8985   -1767  -12301   -8910     720   12795  -16903   -5940  -10449   13352   16556   -3178   18727  -17934   17382  -12850   12813   18484   -9414    -694   13048   16368    3355  -18129   -9544   12317   12066   12346  -16019    7482   -5032  -13298   -5429   -7977   -8828    -423   17239    1692   17681   -5198   17701    1989     334  -19044    1651  
+#  17382  -12850   12813   18484   -9414    -694   13048   16368    3355  -18129   -9544   12317   12066   12346  -16019    7482   -5032  -13298   -5429   -7977   -8828    -423   17239    1692   17681   -5198   17701    1989     334  -19044    1651   14863    7012  -15411   -5684    3241    9164  -18961  -18871  -11400    5662    5821   14534    9726   -8166   17357   -8168  -11369     418   18802    7888   -3270   -8276    1313  -13767  -19231   -6484   10269   12214   12310   18349    4042   -2632    2873  
+# -15411   -5684    3241    9164  -18961  -18871  -11400    5662    5821   14534    9726   -8166   17357   -8168  -11369     418   18802    7888   -3270   -8276    1313  -13767  -19231   -6484   10269   12214   12310   18349    4042   -2632    2873   14739   11319   18443  -18816   17807  -17250    9880   14769   -6547   19831    1443  -13984   18314   16567  -18416   -5596   13145   11921    4800    8479  -16934  -14679   -9020    6263   -9520   15951   -3107   -7797   -2818   19111   18960  -11103  -16974  
+#  18443  -18816   17807  -17250    9880   14769   -6547   19831    1443  -13984   18314   16567  -18416   -5596   13145   11921    4800    8479  -16934  -14679   -9020    6263   -9520   15951   -3107   -7797   -2818   19111   18960  -11103  -16974  -19153   -6163   -7099   -5274  -12097    4769  -15841  -14077   16502   -4121   -9038  -13169   16474  -11986   19217   -1112    3041   17322   15436    4818   -5102    6492    7659   -9416   12056   12759   11542  -18679    6085   19202    5663    6544  -18406  
+# ]
+# 
+# @295 :INFO: Layers of Merged Array 
+# @295 :INFO: Layer 0 
+# Qm = [
+#      0    8146       0       0  
+#      0    3638       0       0  
+#   6692       0       0   13279  
+#   1662       0    1804       0  
+# ]
+# 
+# @295 :INFO: Layer 1 
+# Qm = [
+#   4463       0       0       0  
+#   5283    2879       0       0  
+#   2437   13331       0       0  
+#      0    3341    3448   14352  
+# ]
+# 
+# @295 :INFO: Layer 2 
+# Qm = [
+#   8021    5161       0       0  
+#   4937    5879       0     240  
+#      0    7112    4359       0  
+#      0       0    1717   10040  
+# ]
+# 
+# @295 :INFO: Layer 3 
+# Qm = [
+#      0       0       0       0  
+#   6866       0       0       0  
+#   8423       0       0       0  
+#      0    4574       0       0  
+# ]
+# 
+# @295 :INFO: Output Vector
+# O = [
+#   3984    1616    5251    7292       0       0    9535       0  ]
+# 
+# @                 305: INFO: Start
+# @                8545: INFO: Output Memory Write, addr=0
+# @                8545: INFO: Output Value for element {0} = 0f90
+# @                8545: PASS: Output Memory Write, writing 0f90, expecting 0f90, output status=00000001
+# @                8555: INFO: Output Memory Write, addr=1
+# @                8555: INFO: Output Value for element {1} = 0650
+# @                8555: PASS: Output Memory Write, writing 0650, expecting 0650, output status=00000011
+# @                8565: INFO: Output Memory Write, addr=2
+# @                8565: INFO: Output Value for element {2} = 1483
+# @                8565: PASS: Output Memory Write, writing 1483, expecting 1483, output status=00000111
+# @                8575: INFO: Output Memory Write, addr=3
+# @                8575: INFO: Output Value for element {3} = 1c7c
+# @                8575: PASS: Output Memory Write, writing 1c7c, expecting 1c7c, output status=00001111
+# @                8585: INFO: Output Memory Write, addr=4
+# @                8585: INFO: Output Value for element {4} = 0000
+# @                8585: PASS: Output Memory Write, writing 0000, expecting 0000, output status=00011111
+# @                8595: INFO: Output Memory Write, addr=5
+# @                8595: INFO: Output Value for element {5} = 0000
+# @                8595: PASS: Output Memory Write, writing 0000, expecting 0000, output status=00111111
+# @                8605: INFO: Output Memory Write, addr=6
+# @                8605: INFO: Output Value for element {6} = 253f
+# @                8605: PASS: Output Memory Write, writing 253f, expecting 253f, output status=01111111
+# @                8615: INFO: Output Memory Write, addr=7
+# @                8615: INFO: Output Value for element {7} = 0000
+# @                8615: PASS: Output Memory Write, writing 0000, expecting 0000, output status=11111111
+# @                8695: INFO: Done
+# @                8695: PASS: Output array status: 11111111
+# @                8705: INFO: Start
+# @               16945: INFO: Output Memory Write, addr=0
+# @               16945: INFO: Output Value for element {0} = 0f90
+# @               16945: PASS: Output Memory Write, writing 0f90, expecting 0f90, output status=11111111
+# @               16955: INFO: Output Memory Write, addr=1
+# @               16955: INFO: Output Value for element {1} = 0650
+# @               16955: PASS: Output Memory Write, writing 0650, expecting 0650, output status=11111111
+# @               16965: INFO: Output Memory Write, addr=2
+# @               16965: INFO: Output Value for element {2} = 1483
+# @               16965: PASS: Output Memory Write, writing 1483, expecting 1483, output status=11111111
+# @               16975: INFO: Output Memory Write, addr=3
+# @               16975: INFO: Output Value for element {3} = 1c7c
+# @               16975: PASS: Output Memory Write, writing 1c7c, expecting 1c7c, output status=11111111
+# @               16985: INFO: Output Memory Write, addr=4
+# @               16985: INFO: Output Value for element {4} = 0000
+# @               16985: PASS: Output Memory Write, writing 0000, expecting 0000, output status=11111111
+# @               16995: INFO: Output Memory Write, addr=5
+# @               16995: INFO: Output Value for element {5} = 0000
+# @               16995: PASS: Output Memory Write, writing 0000, expecting 0000, output status=11111111
+# @               17005: INFO: Output Memory Write, addr=6
+# @               17005: INFO: Output Value for element {6} = 253f
+# @               17005: PASS: Output Memory Write, writing 253f, expecting 253f, output status=11111111
+# @               17015: INFO: Output Memory Write, addr=7
+# @               17015: INFO: Output Value for element {7} = 0000
+# @               17015: PASS: Output Memory Write, writing 0000, expecting 0000, output status=11111111
+# @               17095: INFO: Done
+# @               17095: PASS: Output array status: 11111111
+# @               17105: INFO: Start
+# @               25345: INFO: Output Memory Write, addr=0
+# @               25345: INFO: Output Value for element {0} = 0f90
+# @               25345: PASS: Output Memory Write, writing 0f90, expecting 0f90, output status=11111111
+# @               25355: INFO: Output Memory Write, addr=1
+# @               25355: INFO: Output Value for element {1} = 0650
+# @               25355: PASS: Output Memory Write, writing 0650, expecting 0650, output status=11111111
+# @               25365: INFO: Output Memory Write, addr=2
+# @               25365: INFO: Output Value for element {2} = 1483
+# @               25365: PASS: Output Memory Write, writing 1483, expecting 1483, output status=11111111
+# @               25375: INFO: Output Memory Write, addr=3
+# @               25375: INFO: Output Value for element {3} = 1c7c
+# @               25375: PASS: Output Memory Write, writing 1c7c, expecting 1c7c, output status=11111111
+# @               25385: INFO: Output Memory Write, addr=4
+# @               25385: INFO: Output Value for element {4} = 0000
+# @               25385: PASS: Output Memory Write, writing 0000, expecting 0000, output status=11111111
+# @               25395: INFO: Output Memory Write, addr=5
+# @               25395: INFO: Output Value for element {5} = 0000
+# @               25395: PASS: Output Memory Write, writing 0000, expecting 0000, output status=11111111
+# @               25405: INFO: Output Memory Write, addr=6
+# @               25405: INFO: Output Value for element {6} = 253f
+# @               25405: PASS: Output Memory Write, writing 253f, expecting 253f, output status=11111111
+# @               25415: INFO: Output Memory Write, addr=7
+# @               25415: INFO: Output Value for element {7} = 0000
+# @               25415: PASS: Output Memory Write, writing 0000, expecting 0000, output status=11111111
+# @               25495: INFO: Done
+# @               25495: PASS: Output array status: 11111111
+# ** Note: $finish    : ece564_project_tb_top.v(762)
+#    Time: 25495 ns  Iteration: 2  Region: /ece564_project_tb_top_v_unit::generator::run
+# 1
+# Break in Task ece564_project_tb_top_v_unit/generator::run at ece564_project_tb_top.v line 762
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /afs/unity.ncsu.edu/users/s/scheriy/564project/report/wave.do
+# End time: 17:14:58 on Nov 18,2017, Elapsed time: 0:06:08
+# Errors: 0, Warnings: 1

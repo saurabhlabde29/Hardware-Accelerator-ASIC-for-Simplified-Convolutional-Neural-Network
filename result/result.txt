@@ -1,0 +1,6 @@
+RESULTS
+
+Area: 38354.2747
+Number of Cycles: Delay/Clock Period = 8390/12 = 700
+Clock Period: 12
+Performance: Area x Number of Cycles x Clock Period = 32,21,75,907.48

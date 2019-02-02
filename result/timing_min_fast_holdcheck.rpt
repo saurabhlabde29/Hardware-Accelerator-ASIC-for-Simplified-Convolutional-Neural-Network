@@ -1,0 +1,49 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'MyDesign' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : MyDesign
+Version: I-2013.12-SP1
+Date   : Sat Nov 18 17:23:53 2017
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_fast_nldm
+Wire Load Model Mode: top
+
+  Startpoint: count_m_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: count_m_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  count_m_reg[0]/CK (DFF_X2)             0.0000 #   0.0000 r
+  count_m_reg[0]/Q (DFF_X2)              0.0579     0.0579 r
+  U5720/ZN (OAI22_X2)                    0.0179     0.0758 f
+  count_m_reg[0]/D (DFF_X2)              0.0000     0.0758 f
+  data arrival time                                 0.0758
+
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  clock uncertainty                      0.0500     0.0500
+  count_m_reg[0]/CK (DFF_X2)             0.0000     0.0500 r
+  library hold time                      0.0001     0.0501
+  data required time                                0.0501
+  -----------------------------------------------------------
+  data required time                                0.0501
+  data arrival time                                -0.0758
+  -----------------------------------------------------------
+  slack (MET)                                       0.0257
+
+
+1
