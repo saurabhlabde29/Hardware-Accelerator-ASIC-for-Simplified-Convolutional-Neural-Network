@@ -9,3 +9,5 @@ Platforms: Modelsim, Synopsys Design Compiler.
 • The design was verified for functional correctness and synthesized to achieve minimum area and clock period.
 
 • Major design innovation includes parallel memory access logic and pipelined computation of dot product which is responsible for reducing the design area and clock period.
+
+
